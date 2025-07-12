@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "cobaltium:cobalt_ingot"
+    },
+    {
+      "item": "cobaltium:cobalt_ingot"
+    },
+
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "minecraft:lava"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "cobaltium:cobalt_alloy"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "cobaltium:cobalt_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "cobaltium:cobalt_sheet"
+    }
+  ]
+}

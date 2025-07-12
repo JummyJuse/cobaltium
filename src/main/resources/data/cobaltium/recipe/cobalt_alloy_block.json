@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cobaltium:cobalt_alloy"
+    },
+    {
+      "item": "cobaltium:cobalt_alloy"
+    },
+    {
+      "item": "cobaltium:cobalt_alloy"
+    },
+    {
+      "item": "cobaltium:cobalt_alloy"
+    },
+    {
+      "item": "cobaltium:cobalt_alloy"
+    },
+    {
+      "item": "cobaltium:cobalt_alloy"
+    },
+    {
+      "item": "cobaltium:cobalt_alloy"
+    },
+    {
+      "item": "cobaltium:cobalt_alloy"
+    },
+    {
+      "item": "cobaltium:cobalt_alloy"
+    }
+  ],
+  "result": {
+    "id": "cobaltium:cobalt_alloy_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cobaltium:item/incomplete_bionic_mechanism"
+  }
+}

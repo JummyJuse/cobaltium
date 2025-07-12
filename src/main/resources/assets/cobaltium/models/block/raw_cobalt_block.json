@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": { "all": "cobaltium:block/raw_cobalt_block" }
+}

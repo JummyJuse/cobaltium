@@ -1,0 +1,16 @@
+{
+  "item.cobaltium.raw_cobalt": "Raw Cobalt",
+  "item.cobaltium.cobalt_ingot": "Cobalt Ingot",
+  "item.cobaltium.cobalt_alloy": "Cobalt Alloy",
+  "item.cobaltium.cobalt_sheet": "Cobalt Sheet",
+  "item.cobaltium.incomplete_bionic_mechanism": "Incomplete Bionic Mechanism",
+  "item.cobaltium.bionic_mechanism": "Bionic Mechanism",
+  "item.cobaltium.shulk": "Shulk",
+
+  "block.cobaltium.cobalt_ore": "Cobalt Ore",
+  "block.cobaltium.deepslate_cobalt_ore": "Deepslate Cobalt Ore",
+  "block.cobaltium.raw_cobalt_block": "Block of Raw Cobalt",
+  "block.cobaltium.cobalt_alloy_block": "Block of Cobalt Alloy",
+
+  "creativetab.cobaltium.cobaltium_tab": "Cobaltium"
+}

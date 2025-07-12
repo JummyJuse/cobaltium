@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "cobaltium:deepslate_cobalt_ore",
+    "cobaltium:cobalt_ore",
+    "cobaltium:raw_cobalt_block",
+    "cobaltium:cobalt_alloy_block"
+  ]
+}

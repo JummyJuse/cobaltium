@@ -1,0 +1,45 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": { "item": "cobaltium:cobalt_sheet" },
+
+  "loops": 1,
+
+  "results": [
+    { "id": "cobaltium:bionic_mechanism"}
+  ],
+
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "cobaltium:incomplete_bionic_mechanism" },
+        { "item": "create:andesite_alloy" }
+      ],
+      "results": [
+        { "id": "cobaltium:incomplete_bionic_mechanism" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "cobaltium:incomplete_bionic_mechanism" },
+        { "item": "create:andesite_alloy" }
+      ],
+      "results": [
+        { "id": "cobaltium:incomplete_bionic_mechanism" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "cobaltium:incomplete_bionic_mechanism" },
+        { "item": "cobaltium:shulk" }
+      ],
+      "results": [
+        { "id": "cobaltium:incomplete_bionic_mechanism" }
+      ]
+    }
+  ],
+
+  "transitional_item": { "id": "cobaltium:incomplete_bionic_mechanism" }
+}
