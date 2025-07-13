@@ -9,7 +9,7 @@ public final class ModPartials {
 
     private static PartialModel partial(String name) {
         return PartialModel.of(
-                ResourceLocation.fromNamespaceAndPath("cobaltium", "partial/" + name)
+                ResourceLocation.fromNamespaceAndPath("cobaltium", "block/" + name)
         );
     }
 
