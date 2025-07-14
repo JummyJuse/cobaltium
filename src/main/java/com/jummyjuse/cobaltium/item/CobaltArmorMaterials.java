@@ -36,7 +36,7 @@ public final class CobaltArmorMaterials {
                         defense,
                         22,                             // enchantability
                         SoundEvents.ARMOR_EQUIP_IRON,   // equip sound
-                        () -> Ingredient.of(Items.IRON_INGOT), // repair
+                        () -> Ingredient.of(ModItems.COBALT_ALLOY), // repair
                         List.of(new ArmorMaterial.Layer(
                                 ResourceLocation.fromNamespaceAndPath("cobaltium", "cobalt_alloy"))),
                         2.0f,                           // toughness

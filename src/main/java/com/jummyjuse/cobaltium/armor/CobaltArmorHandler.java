@@ -5,6 +5,8 @@ import java.util.UUID;
 
 import com.jummyjuse.cobaltium.item.ModItems; // ← adjust to your registry class
 
+import com.simibubi.create.AllItems;
+import com.simibubi.create.foundation.advancement.AllAdvancements;
 import net.minecraft.advancements.critereon.PlayerHurtEntityTrigger;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
@@ -38,7 +40,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 @EventBusSubscriber
 public class CobaltArmorHandler {
     // … existing code …
-
     @SubscribeEvent
     public static void onInvulnerabilityCheck(EntityInvulnerabilityCheckEvent event) {
         if (testForStealth(event.getEntity())) {
@@ -64,7 +65,7 @@ public class CobaltArmorHandler {
 
         // In 1.21 use width + height + eyeHeight in one call
         event.setNewSize(EntityDimensions.fixed(0.6F * scale, 0.8F * scale).withEyeHeight(0.6F * scale));
-    }
+        }
 
     /* ───────────────────────────────── Visibility ───────────────────────────────── */
 
@@ -114,21 +115,26 @@ public class CobaltArmorHandler {
 
     /** Returns {@code true} if entity is crouching & wearing full Cobalt‑Alloy armor. */
     public static boolean testForStealth(Entity entityIn) {
-        if (!(entityIn instanceof LivingEntity entity))
+        if (entityIn instanceof LivingEntity entity) {
+            if (entity.getPose() != Pose.CROUCHING) {
+                return false;
+            } else {
+                if (entity instanceof Player) {
+                    Player player = (Player)entity;
+                    if (player.getAbilities().flying) {
+                        return false;
+                    }
+                }
+
+                return ModItems.COBALT_ALLOY_HELMET.get()     .equals(entity.getItemBySlot(EquipmentSlot.HEAD ).getItem()) &&
+                        ModItems.COBALT_ALLOY_CHESTPLATE.get() .equals(entity.getItemBySlot(EquipmentSlot.CHEST).getItem()) &&
+                        ModItems.COBALT_ALLOY_LEGGINGS.get()   .equals(entity.getItemBySlot(EquipmentSlot.LEGS ).getItem()) &&
+                        ModItems.COBALT_ALLOY_BOOTS.get()      .equals(entity.getItemBySlot(EquipmentSlot.FEET ).getItem());
+            }
+        } else {
             return false;
-        Pose pose = entity.getPose();
-        if (!(pose == Pose.CROUCHING))
-            return false;
-        if (entity instanceof Player p && p.getAbilities().flying)
-            return false;
-
-        return ModItems.COBALT_ALLOY_HELMET.get()     .equals(entity.getItemBySlot(EquipmentSlot.HEAD ).getItem()) &&
-                ModItems.COBALT_ALLOY_CHESTPLATE.get() .equals(entity.getItemBySlot(EquipmentSlot.CHEST).getItem()) &&
-                ModItems.COBALT_ALLOY_LEGGINGS.get()   .equals(entity.getItemBySlot(EquipmentSlot.LEGS ).getItem()) &&
-                ModItems.COBALT_ALLOY_BOOTS.get()      .equals(entity.getItemBySlot(EquipmentSlot.FEET ).getItem());
-
-
-
+        }
     }
 
 }
+

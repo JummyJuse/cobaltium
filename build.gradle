@@ -3,6 +3,7 @@ plugins {
     id 'maven-publish'
     id 'net.neoforged.moddev' version '2.0.99'
     id 'idea'
+
 }
 
 tasks.named('wrapper', Wrapper).configure {
@@ -51,11 +52,12 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+
 dependencies {
+
     implementation group: 'com.simibubi.create', name: 'create-1.21.1-6.0.6', version: 'unspecified'
     compileOnly(files("libs/flywheel-neoforge-1.21.1-1.0.0-10.jar"))
     runtimeOnly (files("libs/flywheel-neoforge-1.21.1-1.0.0-10.jar"))
-
     /** Catnip 0.8.14, local jar */
     compileOnly(files("libs/Catnip-NeoForge-1.21.1-0.8.14.jar"))
     runtimeOnly (files("libs/Catnip-NeoForge-1.21.1-0.8.14.jar"))
