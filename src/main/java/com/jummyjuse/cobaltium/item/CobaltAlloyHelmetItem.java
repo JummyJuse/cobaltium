@@ -13,10 +13,4 @@ public class CobaltAlloyHelmetItem extends CobaltAlloyArmorItem {
         super(Type.HELMET, props);
     }
 
-    @Override
-    @OnlyIn(Dist.CLIENT)
-    public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-        super.initializeClient(consumer);                    // overlay for invis
-        //consumer.accept(new CardboardArmorStealthOverlay()); // *helmet* shape renderer
-    }
 }

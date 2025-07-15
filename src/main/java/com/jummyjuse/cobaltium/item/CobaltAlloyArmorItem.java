@@ -22,13 +22,6 @@ public class CobaltAlloyArmorItem extends BaseArmorItem {
     }
 
     @Override
-    @OnlyIn(Dist.CLIENT)
-    public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-        // Attach Create’s stealth overlay so the player model disappears when sneaking
-        //consumer.accept(new CardboardArmorStealthOverlay());
-    }
-
-    @Override
     public int getBurnTime(ItemStack stack, @Nullable RecipeType<?> recipe) { return 1000; }
 }
 

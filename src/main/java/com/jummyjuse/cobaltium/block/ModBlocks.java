@@ -34,8 +34,15 @@ public class ModBlocks {
     public static final DeferredBlock<Block> COBALT_ALLOY_BLOCK =  registerBlock("cobalt_alloy_block",
             ()-> new Block(BlockBehaviour.Properties.of()
                     .strength(6f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
-
-
+    public static final DeferredBlock<Block> COBALT_HIDE = BLOCKS.register(
+            "cobalt_hide",
+            () -> new Block(
+                    BlockBehaviour.Properties
+                            .ofFullCopy(Blocks.IRON_BLOCK)
+                            .noOcclusion()             // don’t cull faces, so you can see through
+                            .strength(3.0f)
+            )
+    );
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

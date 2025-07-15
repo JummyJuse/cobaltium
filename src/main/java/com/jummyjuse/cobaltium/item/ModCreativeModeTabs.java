@@ -24,7 +24,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.COBALT_INGOT.get());
                         output.accept(ModItems.COBALT_ALLOY.get());
                         output.accept(ModItems.COBALT_SHEET.get());
-                        //output.accept(ModItems.INCOMPLETE_BIONIC_MECHANISM.get());
                         output.accept(ModItems.BIONIC_MECHANISM.get());
                         output.accept(ModItems.SHULK.get());
 
@@ -32,6 +31,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DEEPSLATE_COBALT_ORE.get());
                         output.accept(ModBlocks.RAW_COBALT_BLOCK.get());
                         output.accept(ModBlocks.COBALT_ALLOY_BLOCK.get());
+
+                        output.accept(ModItems.COBALT_ALLOY_HELMET.get());
+                        output.accept(ModItems.COBALT_ALLOY_CHESTPLATE.get());
+                        output.accept(ModItems.COBALT_ALLOY_LEGGINGS.get());
+                        output.accept(ModItems.COBALT_ALLOY_BOOTS.get());
+
                     }).build());
 
 

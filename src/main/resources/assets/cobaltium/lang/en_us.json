@@ -7,10 +7,18 @@
   "item.cobaltium.bionic_mechanism": "Bionic Mechanism",
   "item.cobaltium.shulk": "Shulk",
 
+  "item.cobaltium.cobalt_alloy_helmet": "Cobaltium Cap",
+  "item.cobaltium.cobalt_alloy_chestplate": "Cobaltium Chestplate",
+  "item.cobaltium.cobalt_alloy_leggings": "Cobaltium Leggings",
+  "item.cobaltium.cobalt_alloy_boots": "Cobaltium Boots",
+
+
   "block.cobaltium.cobalt_ore": "Cobalt Ore",
   "block.cobaltium.deepslate_cobalt_ore": "Deepslate Cobalt Ore",
   "block.cobaltium.raw_cobalt_block": "Block of Raw Cobalt",
   "block.cobaltium.cobalt_alloy_block": "Block of Cobalt Alloy",
+
+
 
   "creativetab.cobaltium.cobaltium_tab": "Cobaltium"
 }
